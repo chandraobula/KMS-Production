@@ -106,15 +106,16 @@ setConfirmLogout(false);
               />
             </div>
 
-            <button
+            <Button
               text="Logout"
               className="logout-btn"
               //onClick={handleLogout}
               onClick={initialLogout}
+              style={{ display: "block" ,background:"black",border:"1px solid black"}}
             />
           </>
         ) : (
-          <button text="Login" className="login-btn" onClick={handleLogin} />
+          <Button text="Login" className="login-btn" onClick={handleLogin} style={{ display: "block",background:"black",border:"1px solid black" }}/>
         )}
         {confirmLogout &&(
           <div className="confirmlogout-overlay">
