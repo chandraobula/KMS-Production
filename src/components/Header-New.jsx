@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/reducers/LoginAuth";
-import Button from "./Buttons";
+//import Button from "./Buttons";
 import { apiService } from "../assets/api/apiService";
 import "../styles/variables.css";
 import "./Header-New.css";
@@ -13,7 +13,7 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  //const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   //const isLoggedIn = true;
   console.log("Login check",isLoggedIn);
   const { user, profileUpdated } = useSelector((state) => state.auth);
