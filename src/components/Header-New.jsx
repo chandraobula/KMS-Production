@@ -105,7 +105,10 @@ setConfirmLogout(false);
                 className="profile-icon"
               />
             </div>
-
+            <span  onClick={initialLogout}>Logout here</span>
+            <div>
+              <h5  onClick={initialLogout}>logout here</h5>
+            </div>
             <Button
               text="Logout"
               className="logout-btn"
@@ -115,6 +118,10 @@ setConfirmLogout(false);
             />
           </>
         ) : (
+           <span  onClick={handleLogin}>Login here</span>
+            <div>
+              <h5  onClick={handleLogin}>login here</h5>
+            </div>
           <Button text="Login" className="login-btn" onClick={handleLogin} style={{ display: "block",background:"black",border:"1px solid black" }}/>
         )}
         {confirmLogout &&(
