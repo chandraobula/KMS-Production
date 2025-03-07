@@ -91,7 +91,7 @@ setConfirmLogout(false);
       </div>
 
       <section className="Search-nav-login">
-        {isLoggedIn ? (
+       
           <>
             <div
               onClick={handleProfileClick}
@@ -112,9 +112,9 @@ setConfirmLogout(false);
               onClick={initialLogout}
             />
           </>
-        ) : (
-          <Button text="Login" className="login-btn" onClick={handleLogin} />
-        )}
+      
+{/*           <Button text="Login" className="login-btn" onClick={handleLogin} /> */}
+{/*         )} */}
         {confirmLogout &&(
           <div className="confirmlogout-overlay">
             <div className="confirmlogout-popup">
