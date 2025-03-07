@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/reducers/LoginAuth";
-//import Button from "./Buttons";
+import Button from "./Buttons";
 import { apiService } from "../assets/api/apiService";
 import "../styles/variables.css";
 import "./Header-New.css";
