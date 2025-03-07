@@ -14,7 +14,7 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   //const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-  const isLoggedIn = true;
+  //const isLoggedIn = true;
   console.log("Login check",isLoggedIn);
   const { user, profileUpdated } = useSelector((state) => state.auth);
   const [currentProfileImage, setCurrentProfileImage] = useState(ProfileIcon);
@@ -104,17 +104,13 @@ setConfirmLogout(false);
                 className="profile-icon"
               />
             </div>
-
-            <Button
-              text="Logout"
+            <button text="Logout"
               className="logout-btn"
               //onClick={handleLogout}
-              onClick={initialLogout}
-            />
-          </>
-      
-{/*           <Button text="Login" className="login-btn" onClick={handleLogin} /> */}
-{/*         )} */}
+              onClick={initialLogout}>
+            </button>
+            <button  text="Login" className="login-btn" onClick={handleLogin}>
+            </button>
         {confirmLogout &&(
           <div className="confirmlogout-overlay">
             <div className="confirmlogout-popup">
