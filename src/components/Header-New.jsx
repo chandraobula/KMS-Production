@@ -92,6 +92,7 @@ setConfirmLogout(false);
 
       <section className="Search-nav-login">
        
+         {isLoggedIn ? (
           <>
             <div
               onClick={handleProfileClick}
@@ -104,13 +105,17 @@ setConfirmLogout(false);
                 className="profile-icon"
               />
             </div>
-            <button text="Logout"
+
+            <button
+              text="Logout"
               className="logout-btn"
               //onClick={handleLogout}
-              onClick={initialLogout}>
-            </button>
-            <button  text="Login" className="login-btn" onClick={handleLogin}>
-            </button>
+              onClick={initialLogout}
+            />
+          </>
+        ) : (
+          <button text="Login" className="login-btn" onClick={handleLogin} />
+        )}
         {confirmLogout &&(
           <div className="confirmlogout-overlay">
             <div className="confirmlogout-popup">
