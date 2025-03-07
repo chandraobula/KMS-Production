@@ -14,6 +14,7 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  console.log("Login check",isLoggedIn);
   const { user, profileUpdated } = useSelector((state) => state.auth);
   const [currentProfileImage, setCurrentProfileImage] = useState(ProfileIcon);
   const[confirmLogout,setConfirmLogout] = useState(false);
