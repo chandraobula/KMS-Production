@@ -282,9 +282,7 @@ const Lander = () => {
           <div className="Landing-Features">
             {isLoggedIn ? (
               // Show this section if logged in
-               <div className="LoggedinFeatures">
-                 <h1>when logged in is true:</h1>
-               </div>
+              
               <div className="LoggedinFeatures">
                 <div className="Feature-Item">
                   <img
@@ -347,11 +345,7 @@ const Lander = () => {
               </div>
             ) : (
               // Show this section if not logged in
-                <section className="WhyInfer-points">
-                  <div>
-                  <h2>when Logged in not ture:</h2>
-                  </div>
-                </section>
+               
               <section className="WhyInfer-points">
                 <div className="Landing-Features-card">
                   <div className="Landing-Features-card-Inner">
