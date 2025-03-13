@@ -146,7 +146,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/reducers/LoginAuth";
-import Button from "./Buttons";
+import Buttons from "./Buttons";
 import { apiService } from "../assets/api/apiService";
 import "../styles/variables.css";
 import "./Header-New.css";
@@ -244,7 +244,7 @@ const Header = () => {
             <div>
               <h5 onClick={initialLogout}>logout here</h5>
             </div>
-            <Button
+            <Buttons
               text="Logout"
               className="logout-btn"
               onClick={initialLogout}
@@ -257,7 +257,7 @@ const Header = () => {
             <div>
               <h5 onClick={handleLogin}>login here</h5>
             </div>
-            <Button
+            <Buttons
               text="Login"
               className="login-btn"
               onClick={handleLogin}
