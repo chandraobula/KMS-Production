@@ -1,18 +1,17 @@
 import React from "react";
 import "../styles/variables.css";
-import "./Button.css"; // Import the CSS specific to this button
+import "./Button.css"; 
 
-const Button = ({ text, onClick, className, loading,style }) => {
+const Buttons = ({ text, onClick, className, loading }) => {
   return (
     <button
       className={`custom-button ${className}`}
       onClick={onClick}
       disabled={loading}
-      style={{ display: 'inline-block', ...style }}
     >
-      {loading ? <div class="searchbar-loader"></div> : text}
+      {loading ? <div className="searchbar-loader"></div> : text}
     </button>
   );
 };
 
-export default Button;
+export default Buttons;
