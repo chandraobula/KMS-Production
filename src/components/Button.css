@@ -1,3 +1,27 @@
+.custom-button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 36.49px;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loader Animation */
+.searchbar-loader {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  mask: conic-gradient(#0000 10%, #000);
+  animation: spin 1s infinite linear;
+}
+
 .signup-btn {
   padding: 8px 16px; /* Adjust padding as needed */
   border: none;
